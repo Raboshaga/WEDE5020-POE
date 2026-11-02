@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Lakaze Kota Bar menu items, catering packages and event food services.">
+    <title>Services | Lakaze Kota Bar & Catering</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a class="brand" href="index.html" aria-label="Lakaze Kota Bar home">
+            <img src="assets/logo.png" alt="Lakaze Kota Bar and Catering logo">
+        </a>
+
+        <button class="menu-btn"
+                id="menuBtn"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="navLinks"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <p class="eyebrow">Food and Catering</p>
+            <h1>Our Services</h1>
+            <p>One page for our Kota menu, catering packages and event food services.</p>
+        </section>
+
+        <!-- Part 3: JavaScript-generated menu with live search and sorting -->
+        <section class="section" aria-labelledby="dynamicMenuHeading">
+          <h2 id="dynamicMenuHeading">Browse and order our menu</h2>
+          <p>Prices are in South African rand. Catering prices are starting estimates per guest.</p>
+          <div class="menu-controls"><label>Search menu <input id="menuSearch" type="search" placeholder="Search food or catering"></label>
+          <label>Sort menu <select id="menuSort"><option value="default">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name A–Z</option></select></label></div>
+          <div class="card-grid" id="dynamicMenu" aria-live="polite"></div>
+        </section>
+        <!-- MENU -->
+        <section class="section" id="menu">
+            <div class="section-heading">
+                <p class="eyebrow">Kota Menu</p>
+                <h2>Signature Food Options</h2>
+                <p>Popular menu options available for food orders.</p>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-media">
+                        <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/ko5.jpg">
+                            <img src="assets/ko5.jpg"
+                                 srcset="assets/ko5.jpg 640w,
+                                         assets/ko5.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Lakaze Boss Kota"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lakaze Boss Kota</h3>
+                        <p>Russian sausage, cheese, bacon, egg, polony and slap chips.</p>
+                        <strong class="price-tag">R85</strong>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-media">
+                        <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/ko6.jpg">
+                            <img src="assets/ko6.jpg"
+                                 srcset="assets/ko6.jpg 640w,
+                                         assets/ko6.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Soweto Supreme Kota"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body">
+                        <h3>Soweto Supreme</h3>
+                        <p>Braaied beef, smoked ham, mozzarella, chips and chakalaka.</p>
+                        <strong class="price-tag">R95</strong>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-media">
+                        <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/ko.jpg">
+                            <img src="assets/ko.jpg"
+                                 srcset="assets/ko.jpg 640w,
+                                         assets/ko.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="BBQ Pulled Chicken Kota"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body">
+                        <h3>BBQ Pulled Chicken Kota</h3>
+                        <p>BBQ chicken, coleslaw, chips and melted cheese.</p>
+                        <strong class="price-tag">R78</strong>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-media">
+                        <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/kov.jpg">
+                            <img src="assets/kov.jpg"
+                                 srcset="assets/kov.jpg 640w,
+                                         assets/kov.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Veggie Deluxe Kota"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body">
+                        <h3>Veggie Deluxe</h3>
+                        <p>Halloumi, avocado, chips, egg, lettuce and sweet chilli mayo.</p>
+                        <strong class="price-tag">R70</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CATERING -->
+        <section class="section alt" id="catering">
+            <div class="section-heading">
+                <p class="eyebrow">Catering Packages</p>
+                <h2>Flexible Catering for Different Events</h2>
+                <p>Packages can be adjusted according to guest numbers and event requirements.</p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/kob.jpg">
+                            <img src="assets/kob.jpg"
+                                 srcset="assets/kob.jpg 640w,
+                                         assets/kob.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Gourmet buffet spread"
+                                 loading="lazy">
+                        </picture>
+                    <h3>Gourmet Buffet</h3>
+                    <p>Warm meals, salads and side dishes for larger celebrations.</p>
+                    <p class="price-tag">From R185 per guest</p>
+                </article>
+
+                <article class="service-card">
+                    <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/kop.jpg">
+                            <img src="assets/kop.jpg"
+                                 srcset="assets/kop.jpg 640w,
+                                         assets/kop.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Fresh salad and appetiser platters"
+                                 loading="lazy">
+                        </picture>
+                    <h3>Platters and Salads</h3>
+                    <p>Fresh appetisers, salads and lighter food options.</p>
+                    <p class="price-tag">From R155 per guest</p>
+                </article>
+
+                <article class="service-card">
+                    <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/kod.jpg">
+                            <img src="assets/kod.jpg"
+                                 srcset="assets/kod.jpg 640w,
+                                         assets/kod.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Dessert and pastry catering"
+                                 loading="lazy">
+                        </picture>
+                    <h3>Dessert Table</h3>
+                    <p>Pastries, desserts and sweet treats for celebrations.</p>
+                    <p class="price-tag">From R95 per guest</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- EVENTS -->
+        <section class="section" id="events">
+            <div class="two-col">
+                <div>
+                    <picture>
+                            <source media="(max-width: 700px)"
+                                    srcset="assets/kob.jpg">
+                            <img src="assets/kob.jpg"
+                                 srcset="assets/kob.jpg 640w,
+                                         assets/kob.jpg 1200w"
+                                 sizes="(max-width: 700px) 100vw,
+                                        (max-width: 1000px) 50vw,
+                                        33vw"
+                                 alt="Lakaze event catering setup"
+                                 loading="lazy">
+                        </picture>
+                </div>
+
+                <div>
+                    <p class="eyebrow">Event Food Services</p>
+                    <h2>Events We Can Cater For</h2>
+                    <ul class="check-list">
+                        <li>Birthday celebrations</li>
+                        <li>Corporate functions</li>
+                        <li>Private family events</li>
+                        <li>Community celebrations</li>
+                        <li>Small business functions</li>
+                    </ul>
+                    <a class="btn" href="enquiry.html">Request a Catering Quote</a>
+                     <div class="social-links">
+
+          
+
+            
+            <a href="https://www.instagram.com/_tshegoo.r?mdxt=ZTB1dTFoOTE0Yjc3&utm_source=qr" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+            <a href="mailto:ST10530168@rcconnect.edu.za">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+          
+            <a href="https://wa.me/0766778907" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+        </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <section>
+                <h3>Lakaze Kota Bar</h3>
+                <p>Authentic South African gourmet Kotas and professional catering in Polokwane, Limpopo.</p>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+            </section>
+
+            <section>
+                <h3>Customer Help</h3>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </section>
+
+            <section>
+                <h3>Operating Hours</h3>
+                <p>Mon-Thu: 09:00-21:00</p>
+                <p>Fri-Sat: 09:00-23:00</p>
+                <p>Sun: 10:00-20:00</p>
+                <p><a href="tel:+2782683969">082 683 969</a></p>
+            </section>
+        </div>
+
+        <p class="copyright">&copy; 2026 Lakaze Kota Bar &amp; Catering. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

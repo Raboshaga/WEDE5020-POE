@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Add Sitemap: https://lakaza-kota.netlify.app/sitemap.xml after deployment

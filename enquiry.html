@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a food order or catering enquiry to Lakaze Kota Bar and Catering.">
+    <title>Enquiry | Lakaze Kota Bar & Catering</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a class="brand" href="index.html" aria-label="Lakaze Kota Bar home">
+            <img src="assets/logo.png" alt="Lakaze Kota Bar and Catering logo">
+        </a>
+
+        <button class="menu-btn"
+                id="menuBtn"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="navLinks"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <p class="eyebrow">Request Information</p>
+            <h1>Enquiry Form</h1>
+            <p>Tell us what you need so that we can prepare the right response.</p>
+        </section>
+
+        <section class="section" aria-labelledby="calculatorHeading">
+          <div class="form-card"><h2 id="calculatorHeading">Order &amp; Catering Price Calculator</h2>
+          <p>Select a menu item and quantity to calculate an instant estimate. Catering prices are per guest and may change after quotation.</p>
+          <div class="form-grid"><div><label for="orderItem">Menu item / package</label><select id="orderItem"></select></div>
+          <div><label for="orderQty">Quantity / number of guests</label><input id="orderQty" type="number" min="1" max="1000" value="1" required></div></div>
+          <output id="orderTotal" class="calculator-total" aria-live="polite"></output>
+          <input type="hidden" id="orderSummary" name="orderSummary" form="enquiryForm">
+          </div>
+        </section>
+        <section class="section">
+            <div class="form-card">
+                <form class="demo-form" id="enquiryForm">
+                    <div class="form-grid">
+
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input id="name"
+                                   name="name"
+                                   type="text"
+                                   required
+                                   minlength="2">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email"
+                                   name="email"
+                                   type="email"
+                                   required>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input id="phone"
+                                   name="phone"
+                                   type="tel"
+                                   required>
+                        </div>
+
+                        <div>
+                            <label for="type">Enquiry Type</label>
+                            <select id="type"
+                                    name="type"
+                                    required>
+                                <option value="">Select an option</option>
+                                <option value="food-order">Food Order</option>
+                                <option value="catering">Catering Quotation</option>
+                                <option value="event">Event Catering</option>
+                                <option value="general">General Enquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="date">Preferred Date</label>
+                            <input id="date"
+                                   name="date"
+                                   type="date">
+                        </div>
+
+                        <div>
+                            <label for="guests">Estimated Guests</label>
+                            <input id="guests"
+                                   name="guests"
+                                   type="number"
+                                   min="1">
+                        </div>
+
+                        <div class="full">
+                            <label for="details">Requirements</label>
+                            <textarea id="details"
+                                      name="details"
+                                      rows="6"
+                                      required
+                                      minlength="10"
+                                      placeholder="Describe your food order, event or catering requirements."></textarea>
+                        </div>
+
+                    </div>
+
+                    <button class="btn" type="submit">Submit Enquiry</button>
+                    <p class="result" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="social-links">
+
+          
+
+            
+            <a href="https://www.instagram.com/_tshegoo.r?mdxt=ZTB1dTFoOTE0Yjc3&utm_source=qr" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+            <a href="mailto:ST10530168@rcconnect.edu.za">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+          
+            <a href="https://wa.me/0766778907" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+        </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <section>
+                <h3>Lakaze Kota Bar</h3>
+                <p>Authentic South African gourmet Kotas and professional catering in Polokwane, Limpopo.</p>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+            </section>
+
+            <section>
+                <h3>Customer Help</h3>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </section>
+
+            <section>
+                <h3>Operating Hours</h3>
+                <p>Mon-Thu: 09:00-21:00</p>
+                <p>Fri-Sat: 09:00-23:00</p>
+                <p>Sun: 10:00-20:00</p>
+                <p><a href="tel:+2782683969">082 683 969</a></p>
+            </section>
+        </div>
+
+        <p class="copyright">&copy; 2026 Lakaze Kota Bar &amp; Catering. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

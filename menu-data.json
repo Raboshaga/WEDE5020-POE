@@ -1,0 +1,58 @@
+[
+  {
+    "id": "boss",
+    "name": "Lakaze Boss Kota",
+    "price": 85,
+    "image": "assets/ko5.jpg",
+    "description": "Russian sausage, cheese, bacon, egg, polony and slap chips.",
+    "category": "Kota"
+  },
+  {
+    "id": "supreme",
+    "name": "Soweto Supreme",
+    "price": 95,
+    "image": "assets/ko6.jpg",
+    "description": "Braaied beef, smoked ham, mozzarella, chips and chakalaka.",
+    "category": "Kota"
+  },
+  {
+    "id": "chicken",
+    "name": "BBQ Pulled Chicken Kota",
+    "price": 78,
+    "image": "assets/ko.jpg",
+    "description": "BBQ chicken, coleslaw, chips and melted cheese.",
+    "category": "Kota"
+  },
+  {
+    "id": "veggie",
+    "name": "Veggie Deluxe",
+    "price": 70,
+    "image": "assets/kov.jpg",
+    "description": "Halloumi, avocado, chips, egg, lettuce and sweet chilli mayo.",
+    "category": "Kota"
+  },
+  {
+    "id": "premium",
+    "name": "Premium Event Catering",
+    "price": 185,
+    "image": "assets/kod.jpg",
+    "description": "Starting price per guest; final quotation subject to confirmation.",
+    "category": "Catering"
+  },
+  {
+    "id": "standard",
+    "name": "Standard Catering",
+    "price": 155,
+    "image": "assets/kop.jpg",
+    "description": "Starting price per guest; final quotation subject to confirmation.",
+    "category": "Catering"
+  },
+  {
+    "id": "basic",
+    "name": "Basic Catering",
+    "price": 95,
+    "image": "assets/kos.jpg",
+    "description": "Starting price per guest; final quotation subject to confirmation.",
+    "category": "Catering"
+  }
+]
